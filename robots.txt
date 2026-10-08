@@ -1,0 +1,28 @@
+# Legwork robots.txt
+# Static marketing site: no private, admin, or API paths exist, so nothing is
+# disallowed. Search and AI/answer-engine crawlers are explicitly welcomed so
+# the site can be indexed and cited. A crawler that matches a named block below
+# uses ONLY that block, so each one repeats Allow: / .
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://thelegwork.ai/sitemap.xml

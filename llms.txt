@@ -1,0 +1,28 @@
+# Legwork
+
+> Legal AI for Indian IP practice. Legwork carries matters end to end, built with one design partner on 22 years and 3.5 TB of real practice.
+
+Legwork is AI that carries a legal matter end to end, from intake to filing to follow-through, on the systems a firm already runs. It is deepest today in Indian IP practice (trademarks, patents, and IP litigation). It was built inside a working law firm, not beside one, with one design partner, on 22 years and 3.5 TB of real practice data.
+
+## Pages
+
+- [Home](https://thelegwork.ai/): Product overview, workflows, security, and FAQ.
+- [Capabilities](https://thelegwork.ai/capabilities/): The eleven capabilities Legwork runs across trademark prosecution and enforcement, dilution searches, the dilution search matrix, TMO search strings, analytics, email automation, RIA for paralegals, trademark audits, patent prosecution and drafting, patent personas, and litigation drafting.
+- [Solutions](https://thelegwork.ai/solutions/): AI transformation for legal teams and IP practice areas.
+- [About](https://thelegwork.ai/about/): The story of how Legwork was built inside a law firm, and the founding team.
+- [Privacy Policy](https://thelegwork.ai/privacy.html): How Legwork collects, uses, and protects personal data.
+- [Terms of Use](https://thelegwork.ai/terms.html): The terms governing use of the Legwork website and platform.
+
+## Team
+
+- Deepansh Bhati, Founder and Chief of Momentum: brings the legal practice grounding behind Legwork.
+- Jasminder Gulati, Anchor and Chief of Energy: founder of NowFloats, acquired by Reliance Jio, with three decades in AI across research, building and investing.
+
+## Key facts
+
+- 22 years of live practice data behind the product.
+- 3.5 TB of real matters, filings, deadlines, and outcomes validated against the model.
+- Data residency in India, with confidentiality and privilege treated as the default.
+- End to end: intake, research, drafting, filing, and follow-through, on one living record.
+- No rip-and-replace: Legwork works on the systems a firm already runs.
+- Contact: deepansh@thelegwork.ai, or WhatsApp the founder from thelegwork.ai.
