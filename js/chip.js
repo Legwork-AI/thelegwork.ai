@@ -74,8 +74,8 @@
       success.hidden = false;
     }
 
-    // No-JS / server-redirect fallback: Netlify (or any host respecting the
-    // form's action) sends the visitor back with ?subscribed=1.
+    // No-JS fallback: the server behind form.action sends the visitor back
+    // with ?subscribed=1.
     if (/(?:^|[?&])subscribed=1(?:&|$)/.test(window.location.search)) {
       showSuccess();
     }
@@ -87,9 +87,9 @@
       data.forEach(function (value, key) {
         encoded.push(encodeURIComponent(key) + "=" + encodeURIComponent(value));
       });
-      fetch("/", {
+      fetch(form.action, {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        headers: { "Content-Type": "application/x-www-form-urlencoded", "Accept": "application/json" },
         body: encoded.join("&")
       })
         .then(showSuccess)
