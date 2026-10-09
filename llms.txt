@@ -1,8 +1,8 @@
 # Legwork
 
-> Legal AI for Indian IP practice. Legwork carries matters end to end, built with one design partner on 22 years and 3.5 TB of real practice.
+> Legal AI for Indian IP practice. Legwork carries matters end to end, built inside a working IP law firm.
 
-Legwork is AI that carries a legal matter end to end, from intake to filing to follow-through, on the systems a firm already runs. It is deepest today in Indian IP practice (trademarks, patents, and IP litigation). It was built inside a working law firm, not beside one, with one design partner, on 22 years and 3.5 TB of real practice data.
+Legwork is AI that carries a legal matter end to end, from intake to filing to follow-through, on the systems a firm already runs. It is deepest today in Indian IP practice (trademarks, patents, and IP litigation). It was built inside a working law firm, not beside one.
 
 ## Pages
 
@@ -20,8 +20,6 @@ Legwork is AI that carries a legal matter end to end, from intake to filing to f
 
 ## Key facts
 
-- 22 years of live practice data behind the product.
-- 3.5 TB of real matters, filings, deadlines, and outcomes validated against the model.
 - Data residency in India, with confidentiality and privilege treated as the default.
 - End to end: intake, research, drafting, filing, and follow-through, on one living record.
 - No rip-and-replace: Legwork works on the systems a firm already runs.
