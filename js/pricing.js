@@ -174,12 +174,10 @@
         lines.push({ label: s.addon[1], amt: amt2 }); names.push(s.addon[1]); perSeat += amt2;
       }
     });
-    var dktEl = $("#dkt-card");
-    if (dktEl) dktEl.classList.toggle("is-free", anyFull);
-    if (anyFull) { lines.push({ label: "Legwork IP Docketing", amt: 0, free: true }); names.push("Legwork IP Docketing (complimentary)"); }
     // Docketing is one charge for the firm, whatever the seat count.
     var flat = 0;
-    if (!anyFull && state.dkt) { var d = rate(DKT); lines.push({ label: "Legwork IP Docketing (firm-wide)", amt: d }); names.push("Legwork IP Docketing"); flat += d; }
+    // Legwork IP Docketing is its own product: one charge for the firm, never included with a stack.
+    if (state.dkt) { var d = rate(DKT); lines.push({ label: "Legwork IP Docketing (firm-wide)", amt: d }); names.push("Legwork IP Docketing"); flat += d; }
     return { lines: lines, perSeat: perSeat, flat: flat, total: perSeat * state.seats + flat, names: names, anyFull: anyFull };
   }
 
