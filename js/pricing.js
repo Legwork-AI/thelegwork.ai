@@ -18,7 +18,7 @@
   "use strict";
 
   var YEARLY_DISCOUNT = 0.10;
-  var DKT = { m: 999, y: 10000 };          // Legwork Docketing (Standard) when no full stack is chosen
+  var DKT = { m: 4999, y: 54000 };         // Legwork IP Docketing when no full stack is chosen
   var WHATSAPP = "918130588175";
 
   // Anything built by hand — single agents or a self-assembled full stack —
@@ -176,10 +176,10 @@
     });
     var dktEl = $("#dkt-card");
     if (dktEl) dktEl.classList.toggle("is-free", anyFull);
-    if (anyFull) { lines.push({ label: "Legwork Docketing", amt: 0, free: true }); names.push("Legwork Docketing (complimentary)"); }
+    if (anyFull) { lines.push({ label: "Legwork IP Docketing", amt: 0, free: true }); names.push("Legwork IP Docketing (complimentary)"); }
     // Docketing is one charge for the firm, whatever the seat count.
     var flat = 0;
-    if (!anyFull && state.dkt) { var d = rate(DKT); lines.push({ label: "Legwork Docketing · Standard (firm-wide)", amt: d }); names.push("Legwork Docketing (Standard)"); flat += d; }
+    if (!anyFull && state.dkt) { var d = rate(DKT); lines.push({ label: "Legwork IP Docketing (firm-wide)", amt: d }); names.push("Legwork IP Docketing"); flat += d; }
     return { lines: lines, perSeat: perSeat, flat: flat, total: perSeat * state.seats + flat, names: names, anyFull: anyFull };
   }
 
