@@ -8,6 +8,8 @@ Legwork is AI that carries a legal matter end to end, from intake to filing to f
 
 - [Home](https://thelegwork.ai/): Product overview, workflows, security, and FAQ.
 - [Capabilities](https://thelegwork.ai/capabilities/): The eleven capabilities Legwork runs across trademark prosecution and enforcement, dilution searches, the dilution search matrix, TMO search strings, analytics, email automation, RIA for paralegals, trademark audits, patent prosecution and drafting, patent personas, and litigation drafting.
+- [Legwork IP Docketing](https://thelegwork.ai/products/docketing/): The IP register for the whole firm, with statutory dates derived from the record, a watch on the IP India portals, Email Intelligence and the Paralegal Desk. One price for the firm.
+- [Legwork Litigation Docketing](https://thelegwork.ai/products/litigation-docketing/): The court file room for a litigation practice at docket.thelegwork.ai: matters, order sheets, cause lists, tasks and limitation, case status and orders read from the courts, case-law research, intake, Document Drop and a copilot over the book. Rs 4,999 a month for the firm with 10 GB of storage; independent of the IP suite and of IP Docketing.
 - [Solutions](https://thelegwork.ai/solutions/): AI transformation for legal teams and IP practice areas.
 - [About](https://thelegwork.ai/about/): The story of how Legwork was built inside a law firm, and the founding team.
 - [Privacy Policy](https://thelegwork.ai/privacy.html): How Legwork collects, uses, and protects personal data.
