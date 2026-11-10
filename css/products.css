@@ -196,3 +196,6 @@
 .nav-prod__link--name .nav-prod__name{font-size:15px;font-weight:600;letter-spacing:.005em;color:var(--blue-800)}
 .nav-prod__link--name:hover,.nav-prod__link--name:focus-visible{border-left-color:var(--blue-600)}
 .nav-prod__link--name .nav-prod__desc{margin-top:0}
+
+/* Six-card grids on the home page sit three to a row. */
+.ps-cards--trio,.security__grid{grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr))}

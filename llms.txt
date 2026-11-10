@@ -1,13 +1,17 @@
 # Legwork
 
-> Legal AI for Indian IP practice. Legwork carries matters end to end, built inside a working IP law firm.
+> Legal AI for Indian IP practice and contracts. Legwork carries matters end to end, built inside a working IP law firm.
 
-Legwork is AI that carries a legal matter end to end, from intake to filing to follow-through, on the systems a firm already runs. It is deepest today in Indian IP practice (trademarks, patents, and IP litigation). It was built inside a working law firm, not beside one.
+Legwork is AI that carries a legal matter end to end, from intake to filing to follow-through, on the systems a firm already runs. It is deepest today in Indian IP practice (trademarks, patents, and IP litigation), and the Contract Suite covers contract drafting and review under Indian law. It was built inside a working law firm, not beside one.
 
 ## Pages
 
 - [Home](https://thelegwork.ai/): Product overview, workflows, security, and FAQ.
-- [Capabilities](https://thelegwork.ai/capabilities/): The eleven capabilities Legwork runs across trademark prosecution and enforcement, dilution searches, the dilution search matrix, TMO search strings, analytics, email automation, RIA for paralegals, trademark audits, patent prosecution and drafting, patent personas, and litigation drafting.
+- [Capabilities](https://thelegwork.ai/capabilities/): The twelve capabilities Legwork runs across trademark prosecution and enforcement, dilution searches, the dilution search matrix, TMO search strings, analytics, email automation, RIA for paralegals, trademark audits, patent prosecution and drafting, patent personas, litigation drafting, and contract drafting and review.
+- [Legwork Trademark Suite](https://thelegwork.ai/products/trademark-suite/): Forty-two agents that carry a mark from clearance search through the Registry, opposition, cancellation and enforcement, with a closure letter when an enforcement matter ends, and Registry follow-up letters and Powers of Attorney on the paralegal seat.
+- [Legwork Patent Suite](https://thelegwork.ai/products/patent-suite/): Specification to grant: drafting, FER and SER responses, amendments and Form 3, with twenty-five technical personas.
+- [Legwork Litigation Suite](https://thelegwork.ai/products/litigation-suite/): The plaint with its peripheral documents and interim applications, the written statement and the replication for IP suits in the commercial courts.
+- [Legwork Contract Suite](https://thelegwork.ai/products/contract-suite/): Contract Drafting for ninety-seven agreements across ten categories under Indian law, from the client's documents or a detailed form; Contract Review from the client's side, with redlines graded critical, high and medium, statutes checked against the bare acts, and a Word file with tracked changes; and a firm-wide Clause Library that feeds both.
 - [Legwork IP Docketing](https://thelegwork.ai/products/docketing/): The IP register for the whole firm, with statutory dates derived from the record, a watch on the IP India portals, Email Intelligence and the Paralegal Desk. One price for the firm.
 - [Legwork Litigation Docketing](https://thelegwork.ai/products/litigation-docketing/): The court file room for a litigation practice at docket.thelegwork.ai: matters, order sheets, cause lists, tasks and limitation, case status and orders read from the courts, case-law research, intake, Document Drop and a copilot over the book. Rs 4,999 a month for the firm with 10 GB of storage; independent of the IP suite and of IP Docketing.
 - [Solutions](https://thelegwork.ai/solutions/): AI transformation for legal teams and IP practice areas.
@@ -25,4 +29,7 @@ Legwork is AI that carries a legal matter end to end, from intake to filing to f
 - Data residency in India, with confidentiality and privilege treated as the default.
 - End to end: intake, research, drafting, filing, and follow-through, on one living record.
 - No rip-and-replace: Legwork works on the systems a firm already runs.
+- Legwork Co-Pilot runs whole workflows in the chat: clearance searches stage by stage, Registry records fetched, drafts returned, and many matters worked from one Excel sheet.
+- Draft Studio keeps every version of a draft and shares it clean or with tracked changes as Word.
+- A firm can take a dedicated single-firm instance on its own server, with sign-in limited to the office network and usage visible by team and by person.
 - Contact: deepansh@thelegwork.ai, or WhatsApp the founder from thelegwork.ai.
