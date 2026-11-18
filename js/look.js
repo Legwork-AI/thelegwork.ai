@@ -1,43 +1,41 @@
-/* Legwork · the site's look: motion only. Nothing here changes what the page
-   says. Blocks rise in as they enter the screen, the headline numbers count
-   up once, and cards follow the pointer with a soft light. Remove the
-   <script> tag for this file and the page is exactly as it was. */
+/* Legwork · the site's look ("sheets"). Motion and header state;
+   nothing here changes what the page says. */
 (function () {
   'use strict';
   var root = document.documentElement;
+
+  /* The header is see-through while the dark hero is behind it. */
+  var hero = document.querySelector('.hero');
+  var nav = document.querySelector('.site-nav');
+  if (hero && nav) {
+    var onScroll = function () {
+      var dark = hero.getBoundingClientRect().bottom > nav.offsetHeight + 8;
+      root.classList.toggle('x-ondark', dark);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+  }
+
   var calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  /* Pointer light on cards. */
-  var lit = '.problem__card,.ps-band--white .ps-card,.security-card';
-  document.addEventListener('pointermove', function (e) {
-    var card = e.target && e.target.closest ? e.target.closest(lit) : null;
-    if (!card) return;
-    var r = card.getBoundingClientRect();
-    card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
-    card.style.setProperty('--my', (e.clientY - r.top) + 'px');
-  }, { passive: true });
-
   if (calm || !('IntersectionObserver' in window)) return;
 
-  /* Rise-in. Groups stagger their children; single blocks rise alone. */
   var groups = [
-    '.integrations__logos', '.problem__grid', '.product__stages',
-    '.ps-cards', '.workflows__list', '.security__grid', '.faq__list', '.ps-flow',
-    '.ps-platform', '.ps-personas', '.about-how__grid', '.about-founder__cards', '.ps-facts'
+    '.integrations__logos', '.problem__grid', '.product__stages', '.ps-cards',
+    '.workflows__list', '.security__grid', '.faq__list', '.ps-flow', '.ps-platform',
+    '.ps-personas', '.about-how__grid', '.about-founder__cards'
   ];
   var singles = [
-    '.integrations > .eyebrow', '.integrations__title', '.integrations__desc',
-    '.problem > .eyebrow', '.problem__title', '.feedback__inner > *', '.product__intro',
-    '.product__embed', '.ps-head', '.workflows__intro', '.receipt__inner',
-    '.security > .eyebrow', '.security__title', '.faq > .eyebrow', '.faq__title',
-    '.hotline__inner > *', '.ps-group', '.ps-side__card', '.ps-detail', '.ps-close > *',
-    '.pr-plan', '.about-story__grid > *'
+    '.integrations__title', '.integrations__desc', '.problem__title', '.feedback__title', '.fb',
+    '.product__title', '.product__desc', '.product__embed', '.section-title', '.section-lede',
+    '.workflows__intro h2', '.workflows__intro p', '.receipt__title', '.receipt__desc',
+    '.security__title', '.faq__title', '.hotline__inner > *', '.ps-group', '.ps-detail'
   ];
   var items = [];
   groups.forEach(function (sel) {
     document.querySelectorAll(sel).forEach(function (g) {
       Array.prototype.forEach.call(g.children, function (el, i) {
-        el.style.setProperty('--x-d', Math.min(i, 8) * 70 + 'ms');
+        el.style.setProperty('--x-d', Math.min(i, 8) * 60 + 'ms');
         items.push(el);
       });
     });
@@ -47,7 +45,6 @@
       if (items.indexOf(el) === -1) items.push(el);
     });
   });
-  if (!items.length) return;
 
   function countUp(el) {
     var end = parseInt(el.textContent, 10);
@@ -71,21 +68,18 @@
       el.classList.add('x-in');
       var big = el.querySelector ? el.querySelector('.stat__big') : null;
       if (big) countUp(big);
-      /* Hand the element back to its own hover transitions once it has landed. */
       setTimeout(function () {
         el.classList.remove('x-r', 'x-in');
         el.style.removeProperty('--x-d');
-      }, 1700);
+      }, 1500);
     });
-  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+  }, { rootMargin: '0px 0px -6% 0px', threshold: 0.05 });
 
   items.forEach(function (el) { el.classList.add('x-r'); });
   root.classList.add('x-js');
   items.forEach(function (el) { io.observe(el); });
-  /* The headline numbers stay in place; they only count up. */
   document.querySelectorAll('.stat').forEach(function (el) { io.observe(el); });
 
-  /* Failsafe: never leave anything hidden. */
   setTimeout(function () {
     items.forEach(function (el) {
       if (el.classList.contains('x-r') && !el.classList.contains('x-in')) {
